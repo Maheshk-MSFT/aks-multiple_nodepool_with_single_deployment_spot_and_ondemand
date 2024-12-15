@@ -20,7 +20,7 @@ metadata:
 data:
   priorities: |-
     1:
-	  - ".*"
+      - ".*"
     10:
       - ".*odpool.*"
     50:
