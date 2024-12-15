@@ -1,12 +1,12 @@
 # multiple_nodepool_with_single_deployment
 Have spot nodes and ondemand but start with spot1, spot2 pools then land finally on-demand
 
-# update the cluster-autoscaler-profile expander from Random to Priority - this is key thing to deploy across the nodepools
+## update the cluster-autoscaler-profile expander from Random to Priority - this is key thing to deploy across the nodepools
 ```
 az aks nodepool update --resource-group mikky_Karp_n_spot-rg --cluster-name mikkydec --name spotpl2 --cluster-autoscaler-profile expander=priority
 ```
 
-# Create this config map
+## Create this config map
 
 ```
 apiVersion: v1
