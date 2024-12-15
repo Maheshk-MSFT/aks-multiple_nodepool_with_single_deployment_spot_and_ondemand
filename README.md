@@ -136,5 +136,7 @@ Using Spot Node with Karpenter (NAP) mixing sku's -> https://techcommunity.micro
 ## useful commands
 ---------------
 az aks show -n <clustername> -g <res-grp> --query autoScalerProfile.expander
+<br>
 az aks nodepool show --resource-group <res_grp_name> --cluster-name <cluster_name> --name <nodepool_name>
 check if the scaleset priority is set to Spot -> "scaleSetPriority": "Spot",
+<br>
