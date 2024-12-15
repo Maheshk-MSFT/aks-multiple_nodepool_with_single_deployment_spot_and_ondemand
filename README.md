@@ -14,6 +14,9 @@ Have spot pool and on-demand mix, but start with spot1, spot2 pools and then lan
 
 <img width="877" alt="6" src="https://github.com/user-attachments/assets/987ecd0e-1aec-4148-b0ad-1eb1becad9df" />
 
+
+<img width="930" alt="image" src="https://github.com/user-attachments/assets/c6c3a04e-594a-4e83-8a4a-3b8a5f7688e3" />
+
 ## 2. update the cluster-autoscaler-profile expander from Random to Priority - this is key thing to deploy across the nodepools
 ```
 az aks nodepool update --resource-group <rg> --cluster-name <clustername> --cluster-autoscaler-profile expander=priority
