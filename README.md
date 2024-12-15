@@ -1,5 +1,8 @@
 # multiple_nodepool_with_single_deployment
-Have spot nodes and ondemand but start with spot1, spot2 pools then land finally on-demand
+Have spot nodes and ondemand mix, but start with spot1, spot2 pools and then land finally on-demand
+
+Make sure we have right labels set for the nodepool and tainted
+
 
 ## update the cluster-autoscaler-profile expander from Random to Priority - this is key thing to deploy across the nodepools
 ```
