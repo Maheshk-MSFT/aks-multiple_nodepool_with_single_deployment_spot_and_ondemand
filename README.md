@@ -16,7 +16,7 @@ Have spot pool and on-demand mix, but start with spot1, spot2 pools and then lan
 
 ## 2. update the cluster-autoscaler-profile expander from Random to Priority - this is key thing to deploy across the nodepools
 ```
-az aks nodepool update --resource-group mikky_Karp_n_spot-rg --cluster-name mikkydec --name spotpl2 --cluster-autoscaler-profile expander=priority
+az aks nodepool update --resource-group <rg> --cluster-name <clustername> --cluster-autoscaler-profile expander=priority
 ```
 
 ## 3. Create this config map (OPTIONAL - no effect even if we delete this cm. We used to create this CM in the past but looks like this step is optional. if it works without this, then skip this step)
