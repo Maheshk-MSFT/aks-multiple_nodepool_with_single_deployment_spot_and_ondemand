@@ -133,4 +133,11 @@ https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/expander
 useful commands
 ---------------
 <br>
-az aks show -n mikkydec -g mikky_Karp_n_spot-rg --query autoScalerProfile.expander
+```
+az aks show -n <clustername> -g <res-grp> --query autoScalerProfile.expander
+```
+<br>
+```
+az aks nodepool show --resource-group <res_grp_name> --cluster-name <cluster_name> --name <nodepool_name>
+```
+check if the scaleset priority is set to Spot -> "scaleSetPriority": "Spot",
