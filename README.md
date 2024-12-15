@@ -131,7 +131,7 @@ https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/expander
 <br>
 https://learn.microsoft.com/en-us/azure/aks/cluster-autoscaler-overview#best-practices-and-considerations [Read the 3 bullet point]
 <img width="466" alt="image" src="https://github.com/user-attachments/assets/c7316e7e-e432-497f-a259-ed9ab4a4edf1" />
-
+Using Spot Node with Karpenter (NAP) mixing sku's -> https://techcommunity.microsoft.com/blog/appsonazureblog/karpenter-run-your-workloads-upto-80-off-using-spot-with-aks/4148840
 useful commands
 ---------------
 <br>
