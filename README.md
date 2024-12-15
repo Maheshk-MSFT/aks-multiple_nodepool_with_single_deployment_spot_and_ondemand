@@ -1,15 +1,25 @@
 # multiple_nodepool_with_single_deployment
-Have spot nodes and ondemand mix, but start with spot1, spot2 pools and then land finally on-demand
+Have spot pool and on-demand mix, but start with spot1, spot2 pools and then land finally on-demand
 
 Make sure we have right labels set for the nodepool and tainted
+<img width="892" alt="1" src="https://github.com/user-attachments/assets/327a527a-a221-43ba-a08e-efef587f0a6d" />
 
+<img width="877" alt="2" src="https://github.com/user-attachments/assets/70ebc6f4-eb85-4e5e-89b1-4219f84d16df" />
+
+<img width="843" alt="3" src="https://github.com/user-attachments/assets/700f5b59-2587-4510-9e42-acc652d04220" />
+
+<img width="886" alt="4" src="https://github.com/user-attachments/assets/a0b3f01b-f10a-4534-b745-fff9b3992410" />
+
+<img width="884" alt="5" src="https://github.com/user-attachments/assets/9d135717-5bc0-4f31-8d6f-727faa5f8732" />
+
+<img width="877" alt="6" src="https://github.com/user-attachments/assets/987ecd0e-1aec-4148-b0ad-1eb1becad9df" />
 
 ## update the cluster-autoscaler-profile expander from Random to Priority - this is key thing to deploy across the nodepools
 ```
 az aks nodepool update --resource-group mikky_Karp_n_spot-rg --cluster-name mikkydec --name spotpl2 --cluster-autoscaler-profile expander=priority
 ```
 
-## Create this config map
+## Create this config map (no effect but we used to create this few years back. I have deleted this CM but it works as expect - OPTIONAL
 
 ```
 apiVersion: v1
