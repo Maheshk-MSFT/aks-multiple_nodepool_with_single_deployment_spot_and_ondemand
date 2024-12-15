@@ -1,4 +1,4 @@
-# multiple_nodepool_with_single_deployment
+# multiple_nodepool_with_single_deployment yaml
 Have spot pool and on-demand mix, but start with spot1, spot2 pools and then land finally on-demand
 
 1. Make sure we have right labels set for the nodepool and tainted
