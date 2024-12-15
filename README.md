@@ -19,7 +19,7 @@ Have spot pool and on-demand mix, but start with spot1, spot2 pools and then lan
 
 ## 2. update the cluster-autoscaler-profile expander from Random to Priority - this is key thing to deploy across the nodepools
 ```
-az aks nodepool update --resource-group <rg> --cluster-name <clustername> --cluster-autoscaler-profile expander=priority
+az aks nodepool update --resource-group rg --cluster-name clustername --cluster-autoscaler-profile expander=priority
 ```
 
 ## 3. Create this config map (OPTIONAL - no effect even if we delete this cm. We used to create this CM in the past but looks like this step is optional. if it works without this, then skip this step)
@@ -143,9 +143,9 @@ https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinit
 sample workload for testing other on-demand pools without taints - https://github.com/Azure-Samples/aks-store-demo/blob/main/aks-store-quickstart.yaml
 ## useful commands
 ---------------
-az aks show -n <clustername> -g <res-grp> --query autoScalerProfile.expander <br>
+az aks show -n cluster_name -g res_grp --query autoScalerProfile.expander <br>
 check if the scaleset priority is set to Spot -> "scaleSetPriority": "Spot",
 <br>
-az aks nodepool show --resource-group <res_grp_name> --cluster-name <cluster_name> --name <nodepool_name>
+az aks nodepool show --resource-group res_grp_name --cluster-name cluster_name --name nodepool_name
 <br>
 
