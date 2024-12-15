@@ -134,6 +134,8 @@ https://learn.microsoft.com/en-us/azure/aks/cluster-autoscaler-overview#best-pra
 Using Spot Node with Karpenter (NAP) mixing sku's -> https://techcommunity.microsoft.com/blog/appsonazureblog/karpenter-run-your-workloads-upto-80-off-using-spot-with-aks/4148840
 <br>
 https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity
+<br> 
+sample workload for testing other on-demand pools without taints - https://github.com/Azure-Samples/aks-store-demo/blob/main/aks-store-quickstart.yaml
 ## useful commands
 ---------------
 az aks show -n <clustername> -g <res-grp> --query autoScalerProfile.expander
