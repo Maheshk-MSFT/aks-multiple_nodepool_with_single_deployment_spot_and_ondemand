@@ -143,9 +143,9 @@ https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinit
 sample workload for testing other on-demand pools without taints - https://github.com/Azure-Samples/aks-store-demo/blob/main/aks-store-quickstart.yaml
 ## useful commands
 ---------------
-az aks show -n <clustername> -g <res-grp> --query autoScalerProfile.expander
+az aks show -n <clustername> -g <res-grp> --query autoScalerProfile.expander <br>
+check if the scaleset priority is set to Spot -> "scaleSetPriority": "Spot",
 <br>
 az aks nodepool show --resource-group <res_grp_name> --cluster-name <cluster_name> --name <nodepool_name>
 <br>
-check if the scaleset priority is set to Spot -> "scaleSetPriority": "Spot",
-<br>
+
