@@ -1,7 +1,7 @@
 # multiple_nodepool_with_single_deployment yaml
 Have spot pool and on-demand mix, but start with spot1, spot2 pools and then land finally on-demand
 
-1. Make sure we have right labels set for the nodepool and tainted
+## 1. Make sure we have right labels set for the nodepool and tainted
 <img width="892" alt="1" src="https://github.com/user-attachments/assets/327a527a-a221-43ba-a08e-efef587f0a6d" />
 
 <img width="877" alt="2" src="https://github.com/user-attachments/assets/70ebc6f4-eb85-4e5e-89b1-4219f84d16df" />
@@ -38,7 +38,7 @@ data:
     70:
       - ".*spotpl.*"
 ```
-4. Follow this yaml
+## 4. Follow this yaml
 ```
 apiVersion: apps/v1
 kind: Deployment
@@ -121,7 +121,7 @@ spec:
           effect: "NoSchedule"
 ```
 
-useful links
+## useful links
 -------------
 https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#what-are-expanders
 <br>
@@ -132,7 +132,8 @@ https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/expander
 https://learn.microsoft.com/en-us/azure/aks/cluster-autoscaler-overview#best-practices-and-considerations [Read the 3 bullet point]
 <img width="466" alt="image" src="https://github.com/user-attachments/assets/c7316e7e-e432-497f-a259-ed9ab4a4edf1" />
 Using Spot Node with Karpenter (NAP) mixing sku's -> https://techcommunity.microsoft.com/blog/appsonazureblog/karpenter-run-your-workloads-upto-80-off-using-spot-with-aks/4148840
-useful commands
+
+## useful commands
 ---------------
 <br>
 az aks show -n <clustername> -g <res-grp> --query autoScalerProfile.expander
