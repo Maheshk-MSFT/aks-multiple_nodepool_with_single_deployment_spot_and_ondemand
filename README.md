@@ -48,7 +48,7 @@ metadata:
   labels:
     app: multi-nodepool-app
 spec:
-  replicas: 50
+  replicas: 30
   selector:
     matchLabels:
       app: multi-nodepool-app
