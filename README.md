@@ -120,3 +120,17 @@ spec:
           value: "testod"
           effect: "NoSchedule"
 ```
+
+useful links
+-------------
+https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#what-are-expanders
+<br>
+https://www.youtube.com/watch?v=mo2UrkjA7FE
+<br>
+https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/expander/priority/readme.md
+<br>
+
+useful commands
+---------------
+<br>
+az aks show -n mikkydec -g mikky_Karp_n_spot-rg --query autoScalerProfile.expander
