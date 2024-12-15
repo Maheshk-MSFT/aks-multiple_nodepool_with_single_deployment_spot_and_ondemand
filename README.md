@@ -129,15 +129,13 @@ https://www.youtube.com/watch?v=mo2UrkjA7FE
 <br>
 https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/expander/priority/readme.md
 <br>
+https://learn.microsoft.com/en-us/azure/aks/cluster-autoscaler-overview#best-practices-and-considerations [Read the 3 bullet point]
+<img width="466" alt="image" src="https://github.com/user-attachments/assets/c7316e7e-e432-497f-a259-ed9ab4a4edf1" />
 
 useful commands
 ---------------
 <br>
-```
 az aks show -n <clustername> -g <res-grp> --query autoScalerProfile.expander
-```
 <br>
-```
 az aks nodepool show --resource-group <res_grp_name> --cluster-name <cluster_name> --name <nodepool_name>
-```
 check if the scaleset priority is set to Spot -> "scaleSetPriority": "Spot",
