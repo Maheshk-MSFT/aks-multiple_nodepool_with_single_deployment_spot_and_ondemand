@@ -136,7 +136,7 @@ https://learn.microsoft.com/en-us/azure/aks/cluster-autoscaler-overview#best-pra
 <br>
 <img width="466" alt="image" src="https://github.com/user-attachments/assets/c7316e7e-e432-497f-a259-ed9ab4a4edf1" />
 <br>
-Using Spot Node with Karpenter (NAP) mixing sku's -> https://techcommunity.microsoft.com/blog/appsonazureblog/karpenter-run-your-workloads-upto-80-off-using-spot-with-aks/4148840
+https://github.com/Maheshk-MSFT/AKS_NAP_Karpenter
 <br>
 https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity
 <br> 
